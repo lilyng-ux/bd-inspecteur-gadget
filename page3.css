@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-size: 1.4em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: white;
+  background-image: url("img/atrium3_escalierNB.jpg");
+  background-size: cover;
+}
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+form {
+  height:30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  margin-left:10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  border: 4px solid whitesmoke;
+}
+label, input {
+  margin-bottom: 20px;
+}
+input {
+  font-size: 2rem;
+  padding: 6px 8px;
+  border: 2px solid black;
+  border-radius: 12px;
+  outline: none;
+}
+/* -- La pop-up de fin  -- */
+.success {
+  width: 50%;
+  height: 100%;
+}
+.next-chapter {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#confirmation {
+  height: 30vh;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: whitesmoke;
+  display: none;
+}
+#confirmation a {
+  padding: 6px 8px;
+  margin-bottom: 15px;
+  color: black;
+  border: 3px solid black;
+  border-radius: 30px;
+  background: transparent;
+  text-decoration: none;
+}
+#confirmation a:hover {
+  background: #D8D8D8;
+}
+h2{
+	color:green;
+}
+p{
+color: black;
+}
+/* ------------------------------------------------------------------------------------------------------
+*  Boutons précédent / suivant
+*  --------------------------------------------------------------------------------------------------- */
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+.controls a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  border: 4px solid whitesmoke;
+  border-radius: 100%;
+  text-decoration: none;
+}

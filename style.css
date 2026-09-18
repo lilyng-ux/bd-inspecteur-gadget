@@ -1,0 +1,91 @@
+/* ------------------------------------------------------------------------------------------------------
+*  Style de votre bande dessinnée
+*  --------------------------------------------------------------------------------------------------- */
+
+body {
+  background-color:beige;
+}
+h1{color: black;
+  justify-content: center;
+  align-items: center;
+  margin-left: 45%;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+/* Les images de fond */
+
+
+.vignette1{
+  height: vh;
+}
+
+.bg1{
+  background-image: url(img/vignette_1.png);
+  background-size: cover;
+  background-position: center center ;
+}
+.bg2{ 
+  background-image: url(img/vignette_2.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.bg3{
+  background-image: url(img/vignette_3.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.bg4{
+  background-image: url(img/vignette_4.png);
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  justify-content: center;
+}
+.bg5{
+  background-image: url(img/vignette_5.jpg);
+  background-size: cover;
+  background-position: cover cover;
+}
+.bg6{
+  background-image: url(img/vignette_6.jpg);
+  background-size: cover;
+  background-position: cover cover;
+}
+
+.consigne{
+  width: 30%;
+}
+
+.txt4{
+  transform: scale(0);
+  animation: glissement 1s ease-in-out forwards;
+  animation-delay: 13s;
+}
+
+@keyframes glissement{
+  from {
+  }
+
+  to {
+    transform: scale(1) rotate(1440deg);
+  }
+}
+
+.affiche{
+  width: 150px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+}
+.affiche{
+  animation-name: heartbeat;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes heartbeat {
+  0%    { width:100px; }
+  50%   { width:200px; }
+  100%  { width:100px; }
+}
+
+}
